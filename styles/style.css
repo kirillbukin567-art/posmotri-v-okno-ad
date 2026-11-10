@@ -3,11 +3,6 @@
 *::after {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 html {
   block-size: 100%;
@@ -99,48 +94,41 @@ ol {
   block-size: 298px;
   overflow: auto;
 }
-html {
+
+/* Размеры и изображения */
+.result__video {
+  inline-size: 100%;
   block-size: 100%;
+  object-fit: cover;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
+.content__list-item {
+  padding: 3px;
 }
 
-ul,
-ol {
-  list-style: none;
+.content__card-link {
+  display: block;
 }
 
-/* Кастомный скроллбар */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+.content__video-card-description-container {
+  flex-grow: 1;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+.content__video-card-thumbnail {
+  flex-shrink: 0;
+  inline-size: 194px;
+  block-size: 103px;
+  object-fit: cover;
 }
