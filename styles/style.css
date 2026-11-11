@@ -80,6 +80,8 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
+  inline-size: 193px;
+  block-size: 34px;
   margin-inline-start: auto;
 }
 
@@ -91,6 +93,9 @@ ol {
 }
 
 .content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   block-size: 298px;
   overflow: auto;
 }
@@ -175,6 +180,39 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+/* Кнопки */
+.button {
+  border: 1px solid #fff;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.more-button {
+  flex-shrink: 0;
+  inline-size: 100%;
+  block-size: 34px;
 }
 
 /* Форма */
